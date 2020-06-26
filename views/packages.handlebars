@@ -1,0 +1,18 @@
+<section class="main">
+    <h2>Below is a Listing of the Featured Packages</h2>
+       <div class="content">
+
+            {{#each data}}
+            <div class="workbox">
+                <div class="content-image">
+                    <img src="/img/{{this.imgSrc}}" alt="order" height="240px" width="250px">
+                </div>
+                <div class="image-content">
+                    <h3>{{this.title}}</h3>
+                    <p>{{this.description}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+</section>
